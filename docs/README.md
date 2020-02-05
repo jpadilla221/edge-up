@@ -32,3 +32,7 @@ and barbers perform.
 * Google Sign in
 * Google Maps
 * Online Payment (ie square, cashapp and apple pay).
+
+### [WireFrame diagram](wireframe.md)
+
+
