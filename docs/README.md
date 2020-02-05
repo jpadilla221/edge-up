@@ -27,4 +27,6 @@ This application will be for barbers and clients.
 
 ### [WireFrame diagram](wireframe.md)
 
+### [Entity-Relationship Diagram](erd.md)
+
 
