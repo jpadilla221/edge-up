@@ -11,11 +11,13 @@ Another feature of this app will be online pay to streamline and improve effcien
 
 This application will be for barbers and clients.
 
-* Barbers can use this app to organize clients via an appointment setting. 
-* This will also allow barbers to accept online payments 
-* Barbers will be able to post pictures displaying their work. 
-* This will help clients find new barbers. 
-* Clients will also be able to review individual barbers and also the shops as a whole.
+* Barbers that want to organize clients via an appointment setting. 
+* Barbers or clients wantig to improve effciency by accepting online payments 
+* Barbers that want to be able to post pictures displaying their work. 
+* Potential clients looking for local barbers or barbers in new location if they just moved to a new city. 
+* Clients who would like to review individual barbers and also the shops as a whole.
+
+[User Stories](user-stories.md)
 
 
 ## External services/data 
