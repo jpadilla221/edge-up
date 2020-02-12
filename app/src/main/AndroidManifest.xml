@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="edu.cnm.deepdive.getback">
+  package="edu.cnm.deepdive.edgeup">
 
   <application
-    android:name=".EdgeUpApplication"
+    android:name="edu.cnm.deepdive.edgeup.EdgeUpApplication"
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
@@ -12,7 +12,7 @@
     android:theme="@style/AppTheme">
     <activity
       android:label="@string/title_activity_main"
-      android:name=".controller.MainActivity"
+      android:name="edu.cnm.deepdive.edgeup.controller.MainActivity"
       android:theme="@style/AppTheme.NoActionBar">
 
       <intent-filter>
