@@ -26,7 +26,7 @@ import java.util.Date;
   }
 
 )
-public class Appointment {
+public class Appointment  {
 
   @ColumnInfo(name = "appointment_id")
   @PrimaryKey(autoGenerate = true)
