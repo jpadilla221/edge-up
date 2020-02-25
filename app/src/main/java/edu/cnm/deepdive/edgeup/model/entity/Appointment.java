@@ -1,10 +1,12 @@
 package edu.cnm.deepdive.edgeup.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverter;
+import com.google.gson.annotations.Expose;
 import java.util.Date;
 
 @Entity(
@@ -41,7 +43,8 @@ public class Appointment  {
   @ColumnInfo(index = true, collate = ColumnInfo.NOCASE)
   private String client;
 
-  @ColumnInfo(index = true)
+  @NonNull
+  @Expose
   private Date date;
 
   private int duration;
@@ -83,11 +86,12 @@ public class Appointment  {
     this.client = client;
   }
 
+  @NonNull
   public Date getDate() {
     return date;
   }
 
-  public void setDate(Date date) {
+  public void setDate(@NonNull Date date) {
     this.date = date;
   }
 

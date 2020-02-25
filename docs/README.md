@@ -29,4 +29,12 @@ This application will be for barbers and clients.
 
 ### [Entity-Relationship Diagram](erd.md)
 
+### [Appointment Entity](https://github.com/jpadilla221/edge-up/blob/master/app/src/main/java/edu/cnm/deepdive/edgeup/model/entity/Appointment.java)
+
+### [Barber Entity](https://github.com/jpadilla221/edge-up/blob/master/app/src/main/java/edu/cnm/deepdive/edgeup/model/entity/Barber.java)
+
+### [Service Entity](https://github.com/jpadilla221/edge-up/blob/master/app/src/main/java/edu/cnm/deepdive/edgeup/model/entity/Service.java)
+
+
+
 
