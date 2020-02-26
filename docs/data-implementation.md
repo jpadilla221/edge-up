@@ -17,5 +17,5 @@
 ## database
 ### [EdgeUp Database](https://github.com/jpadilla221/edge-up/blob/master/app/src/main/java/edu/cnm/deepdive/edgeup/service/EdgeUpDatabase.java)
 
-##DDL
+## DDL
 ### [DDL](ddl.md)
