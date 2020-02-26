@@ -21,7 +21,7 @@ This application will be for barbers and clients.
 
 ## External services/data 
 
-###Google Sign in
+### Google Sign in
 * URL: https://developers.google.com/identity/sign-in/web/sign-in
 
 * How the app uses it: App will use this information to Log user in
@@ -38,7 +38,7 @@ get directions to local shops.
 
 * Can it run without it: yes it can run with out this, Will have to use other 
 maps to get directions.
-###Google calendar
+### Google calendar
 * URL: https://developers.google.com/calendar
 
 * How the app uses it: This will be used to create appointments.
