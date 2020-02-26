@@ -21,9 +21,31 @@ This application will be for barbers and clients.
 
 ## External services/data 
 
-* Google Sign in
-* Google Maps
-* Online Payment (ie square, cashapp and apple pay).
+###Google Sign in
+* URL: https://developers.google.com/identity/sign-in/web/sign-in
+
+* How the app uses it: App will use this information to Log user in
+and create a user profile.
+
+* Can it function without it: This app can function without sign in,  but will 
+not be very user friendly.
+
+### Google Maps
+* URL:https://developers.google.com/maps/documentation
+
+* How the app uses it:This will offer the ability to locate and
+get directions to local shops.
+
+* Can it run without it: yes it can run with out this, Will have to use other 
+maps to get directions.
+###Google calendar
+* URL: https://developers.google.com/calendar
+
+* How the app uses it: This will be used to create appointments.
+
+* Can it run without it: Yes it can be used without but you will have to make appointments
+on your own by calling or texting the barber.
+
 
 ### [WireFrame diagram](wireframe.md)
 
@@ -35,6 +57,6 @@ This application will be for barbers and clients.
 
 ### [Service Entity](https://github.com/jpadilla221/edge-up/blob/master/app/src/main/java/edu/cnm/deepdive/edgeup/model/entity/Service.java)
 
-
+### [DDL](ddl.md)
 
 
