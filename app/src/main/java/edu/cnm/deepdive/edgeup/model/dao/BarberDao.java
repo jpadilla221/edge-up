@@ -8,6 +8,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.edgeup.model.entity.Barber;
+import edu.cnm.deepdive.edgeup.model.entity.Service;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
@@ -29,5 +30,8 @@ public interface BarberDao {
 
   @Query("SELECT * FROM Barber ORDER BY name")
   LiveData<List<Barber>> select();
+
+  @Query("SELECT * FROM Barber WHERE barber_id = :id")
+  Single<Barber> select(long id);
 
 }

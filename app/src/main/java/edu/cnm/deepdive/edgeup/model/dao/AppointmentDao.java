@@ -9,6 +9,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.edgeup.model.entity.Appointment;
+import edu.cnm.deepdive.edgeup.model.entity.Service;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
@@ -30,5 +31,8 @@ public interface AppointmentDao {
 
   @Query("SELECT * FROM Appointment ORDER BY date")
   LiveData<List<Appointment>> select();
+
+  @Query("SELECT * FROM Appointment WHERE appointment_id = :id")
+  Single<Appointment> select(long id);
 
 }
