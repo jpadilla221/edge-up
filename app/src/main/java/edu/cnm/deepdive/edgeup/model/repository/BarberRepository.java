@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.edgeup.model;
+package edu.cnm.deepdive.edgeup.model.repository;
 
 import android.content.Context;
 import androidx.lifecycle.LiveData;
@@ -27,10 +27,9 @@ public class BarberRepository {
     return dao.select();
   }
 
-  public Single<Barber> get(long id) {
+  public LiveData<Barber> get(long id) {
     BarberDao dao = database.getBarberDao();
-    return dao.select(id)
-        .subscribeOn(Schedulers.io());
+    return dao.select(id);
   }
 
   public Completable save(Barber barber) {

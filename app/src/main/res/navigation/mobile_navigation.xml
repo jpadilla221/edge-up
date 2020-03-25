@@ -3,25 +3,25 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/mobile_navigation"
-  app:startDestination="@+id/nav_home">
+  app:startDestination="@+id/nav_barbers">
 
   <fragment
-    android:id="@+id/nav_barber"
+    android:id="@+id/nav_barbers"
     android:label="@string/barber_label"
-    android:name="edu.cnm.deepdive.edgeup.controller.ui.home.HomeFragment"
-    tools:layout="@layout/fragment_home"/>
+    android:name="edu.cnm.deepdive.edgeup.controller.ui.barber.BarberFragment"
+    tools:layout="@layout/fragment_barber"/>
 
   <fragment
-    android:id="@+id/nav_service"
+    android:id="@+id/nav_services"
     android:label="@string/services_label"
-    android:name="edu.cnm.deepdive.edgeup.controller.ui.gallery.GalleryFragment"
-    tools:layout="@layout/fragment_gallery"/>
+    android:name="edu.cnm.deepdive.edgeup.controller.ui.service.ServiceFragment"
+    tools:layout="@layout/fragment_service"/>
 
   <fragment
-    android:id="@+id/nav_appointment"
+    android:id="@+id/nav_appointments"
     android:label="@string/appointment_label"
-    android:name="edu.cnm.deepdive.edgeup.controller.ui.slideshow.SlideshowFragment"
-    tools:layout="@layout/fragment_slideshow"/>
+    android:name="edu.cnm.deepdive.edgeup.controller.ui.appointment.AppointmentFragment"
+    tools:layout="@layout/fragment_appointment"/>
 
 
 </navigation>

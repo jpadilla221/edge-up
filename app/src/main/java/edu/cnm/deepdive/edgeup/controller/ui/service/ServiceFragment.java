@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.edgeup.controller.ui.gallery;
+package edu.cnm.deepdive.edgeup.controller.ui.service;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.edgeup.R;
 
 
-public class GalleryFragment extends Fragment {
+public class ServiceFragment extends Fragment {
 
   private GalleryViewModel galleryViewModel;
 
@@ -21,7 +21,7 @@ public class GalleryFragment extends Fragment {
       ViewGroup container, Bundle savedInstanceState) {
     galleryViewModel =
         ViewModelProviders.of(this).get(GalleryViewModel.class);
-    View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+    View root = inflater.inflate(R.layout.fragment_service, container, false);
     final TextView textView = root.findViewById(R.id.text_gallery);
     galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
       @Override

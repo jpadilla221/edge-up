@@ -33,6 +33,6 @@ public interface AppointmentDao {
   LiveData<List<Appointment>> select();
 
   @Query("SELECT * FROM Appointment WHERE appointment_id = :id")
-  Single<Appointment> select(long id);
+  LiveData<Appointment> select(long id);
 
 }

@@ -32,6 +32,6 @@ public interface BarberDao {
   LiveData<List<Barber>> select();
 
   @Query("SELECT * FROM Barber WHERE barber_id = :id")
-  Single<Barber> select(long id);
+  LiveData<Barber> select(long id);
 
 }

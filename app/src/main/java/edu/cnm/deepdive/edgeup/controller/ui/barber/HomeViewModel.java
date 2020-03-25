@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.edgeup.controller.ui.home;
+package edu.cnm.deepdive.edgeup.controller.ui.barber;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

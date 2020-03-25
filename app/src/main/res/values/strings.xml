@@ -15,6 +15,6 @@
   <string name="menu_share">Share</string>
   <string name="menu_send">Send</string>
   <string name="services_label">Services</string>
-  <string name="appointment_label">Appointment</string>
-  <string name="barber_label">Barber</string>
+  <string name="appointment_label">Appointments</string>
+  <string name="barber_label">Barbers</string>
 </resources>

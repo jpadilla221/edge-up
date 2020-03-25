@@ -12,8 +12,7 @@
     android:theme="@style/AppTheme">
     <activity
       android:label="@string/title_activity_main"
-      android:name="edu.cnm.deepdive.edgeup.controller.MainActivity"
-      android:theme="@style/AppTheme.NoActionBar">
+      android:name="edu.cnm.deepdive.edgeup.controller.MainActivity">
 
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>

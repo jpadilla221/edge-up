@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.edgeup.controller.ui.slideshow;
+package edu.cnm.deepdive.edgeup.controller.ui.appointment;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -32,6 +32,6 @@ public interface ServiceDao {
   LiveData<List<Service>> select();
 
   @Query("SELECT * FROM Service WHERE service_id = :id")
-  Single<Service> select(long id);
+  LiveData<Service> select(long id);
 }
 

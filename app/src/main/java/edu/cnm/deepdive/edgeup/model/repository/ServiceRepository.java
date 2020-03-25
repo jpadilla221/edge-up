@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.edgeup.model;
+package edu.cnm.deepdive.edgeup.model.repository;
 
 import android.content.Context;
 import androidx.lifecycle.LiveData;
@@ -26,10 +26,9 @@ public class ServiceRepository {
     return dao.select();
   }
 
-  public Single<Service> get(long id) {
+  public LiveData<Service> get(long id) {
     ServiceDao dao = database.getServiceDao();
-    return dao.select(id)
-        .subscribeOn(Schedulers.io());
+    return dao.select(id);
   }
 
   public Completable save(Service service) {
