@@ -65,6 +65,6 @@ public class ServiceRecyclerAdapter extends RecyclerView.Adapter<Holder> {
 
   @FunctionalInterface
   public interface OnServiceClickListener {
-    void onBarberClick(int position, Barber barber);
+    void onBarberClick(int position, Service service);
   }
 }
