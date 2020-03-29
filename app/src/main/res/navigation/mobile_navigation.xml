@@ -8,19 +8,19 @@
   <fragment
     android:id="@+id/nav_barbers"
     android:label="@string/barber_label"
-    android:name="edu.cnm.deepdive.edgeup.controller.ui.barber.BarberFragment"
+    android:name="edu.cnm.deepdive.edgeup.controller.BarberFragment"
     tools:layout="@layout/fragment_barber"/>
 
   <fragment
     android:id="@+id/nav_services"
     android:label="@string/services_label"
-    android:name="edu.cnm.deepdive.edgeup.controller.ui.service.ServiceFragment"
+    android:name="edu.cnm.deepdive.edgeup.controller.ServiceFragment"
     tools:layout="@layout/fragment_service"/>
 
   <fragment
     android:id="@+id/nav_appointments"
     android:label="@string/appointment_label"
-    android:name="edu.cnm.deepdive.edgeup.controller.ui.appointment.AppointmentFragment"
+    android:name="edu.cnm.deepdive.edgeup.controller.AppointmentFragment"
     tools:layout="@layout/fragment_appointment"/>
 
 

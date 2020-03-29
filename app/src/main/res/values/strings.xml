@@ -17,4 +17,9 @@
   <string name="services_label">Services</string>
   <string name="appointment_label">Appointments</string>
   <string name="barber_label">Barbers</string>
+  <string name="date_time_format">%1$s %2$s</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="name_of_barber">Name of Barber</string>
 </resources>

@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.edgeup.controller.ui.appointment;
+package edu.cnm.deepdive.edgeup.controller;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.edgeup.R;
+import edu.cnm.deepdive.edgeup.controller.ui.appointment.SlideshowViewModel;
 
 public class AppointmentFragment extends Fragment {
 

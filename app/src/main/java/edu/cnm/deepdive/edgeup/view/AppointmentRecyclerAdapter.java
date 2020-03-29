@@ -10,23 +10,27 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import edu.cnm.deepdive.edgeup.R;
 import edu.cnm.deepdive.edgeup.model.entity.Appointment;
-import edu.cnm.deepdive.edgeup.model.entity.Barber;
-import edu.cnm.deepdive.edgeup.view.BarberRecyclerAdapter.Holder;
-import edu.cnm.deepdive.edgeup.view.BarberRecyclerAdapter.OnBarberClickListener;
+import edu.cnm.deepdive.edgeup.model.pojo.AppointmentWithDetails;
+import edu.cnm.deepdive.edgeup.view.AppointmentRecyclerAdapter.Holder;
+import java.text.DateFormat;
 import java.util.List;
 
 public class AppointmentRecyclerAdapter extends RecyclerView.Adapter<Holder> {
 
   private final Context context;
-  private List<Appointment> appointments;
+  private List<AppointmentWithDetails> appointments;
   private final OnAppointmentClickListener listener;
+  private final DateFormat dateFormat;
+  private final DateFormat timeFormat;
 
   public AppointmentRecyclerAdapter(Context context,
-      List<Barber> barbers,
-      OnBarberClickListener listener) {
+      List<AppointmentWithDetails> appointments,
+      OnAppointmentClickListener listener) {
     this.context = context;
     this.appointments = appointments;
     this.listener = listener;
+    dateFormat = android.text.format.DateFormat.getMediumDateFormat(context);
+    timeFormat = android.text.format.DateFormat.getTimeFormat(context);
   }
   @NonNull
   @Override
@@ -41,21 +45,39 @@ public class AppointmentRecyclerAdapter extends RecyclerView.Adapter<Holder> {
   }
 
   @Override
-  public int getItemCount()  {
+  public int getItemCount() {
     return appointments.size();
+  }
+
     class Holder extends ViewHolder {
 
-      private final TextView name;
-      private final TextView clickView;
+      private final TextView barber;
+      private final TextView client;
+      private final TextView service;
+      private final TextView date;
+      private final TextView duration;
+      private final TextView status;
+      private final View clickView;
 
       public Holder(@NonNull View itemView) {
         super(itemView);
         clickView = itemView.findViewById(R.id.click_view);
-        name = itemView.findViewById(R.id.name);
+        barber = itemView.findViewById(R.id.barber);
+        client = itemView.findViewById(R.id.client);
+        service = itemView.findViewById(R.id.service);
+        date = itemView.findViewById(R.id.date);
+        duration = itemView.findViewById(R.id.duration);
+        status = itemView.findViewById(R.id.status);
       }
 
-      private void bind(int position, Appointment appointment) {
-        name.setText(appointment.getName());
+      private void bind(int position, AppointmentWithDetails appointment) {
+        barber.setText(appointment.getBarber().getName());
+        client.setText(appointment.getClient());
+        service.setText(appointment.getService().getName());
+        date.setText(context.getString(R.string.date_time_format,
+            dateFormat.format(appointment.getDate()), timeFormat.format(appointment.getDate())));
+        duration.setText(String.valueOf(appointment.getDuration()));
+        status.setText(appointment.getStatus().toString());
         clickView.setOnClickListener((v) -> listener.onAppointmentClick(getAdapterPosition(), appointment));
       }
     }

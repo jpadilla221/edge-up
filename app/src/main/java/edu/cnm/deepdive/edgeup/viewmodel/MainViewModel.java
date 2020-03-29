@@ -35,7 +35,7 @@ public class MainViewModel extends AndroidViewModel {
     serviceRepository = new ServiceRepository(application);
     appointmentRepository = new AppointmentRepository(application);
     barberId = new MutableLiveData<>();
-    barber = Transformations.switchMap(barberId, (id) -> barberRepository.get(id));
+    barber = Transformations.switchMap(barberId, barberRepository::get);
     serviceId = new MutableLiveData<>();
     service = Transformations.switchMap(serviceId, (id) -> serviceRepository.get(id));
     appointmentId = new MutableLiveData<>();

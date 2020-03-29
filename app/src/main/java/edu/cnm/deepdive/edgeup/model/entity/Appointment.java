@@ -44,7 +44,6 @@ public class Appointment  {
   private String client;
 
   @NonNull
-  @Expose
   private Date date;
 
   private int duration;

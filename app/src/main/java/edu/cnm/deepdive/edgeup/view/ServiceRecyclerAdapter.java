@@ -21,7 +21,7 @@ public class ServiceRecyclerAdapter extends RecyclerView.Adapter<Holder> {
   private final OnServiceClickListener listener;
 
   public ServiceRecyclerAdapter(Context context,
-      List<Barber> barbers,
+      List<Service> services,
       OnServiceClickListener listener) {
     this.context = context;
     this.services = services;
@@ -49,22 +49,28 @@ public class ServiceRecyclerAdapter extends RecyclerView.Adapter<Holder> {
   class Holder extends ViewHolder {
 
     private final TextView name;
-    private final TextView clickView;
+    private final TextView description;
+    private final TextView duration;
+    private final View clickView;
 
     public Holder(@NonNull View itemView) {
       super(itemView);
       clickView = itemView.findViewById(R.id.click_view);
       name = itemView.findViewById(R.id.name);
+      description = itemView.findViewById(R.id.description);
+      duration = itemView.findViewById(R.id.duration);
     }
 
     private void bind(int position, Service service) {
       name.setText(service.getName());
-      clickView.setOnClickListener((v) -> listener.onServiceClick(getAdapterPosition(), services));
+      description.setText(service.getDescription());
+      duration.setText(String.valueOf(service.getDuration()));
+      clickView.setOnClickListener((v) -> listener.onServiceClick(getAdapterPosition(), service));
     }
   }
 
   @FunctionalInterface
   public interface OnServiceClickListener {
-    void onBarberClick(int position, Service service);
+    void onServiceClick(int position, Service service);
   }
 }

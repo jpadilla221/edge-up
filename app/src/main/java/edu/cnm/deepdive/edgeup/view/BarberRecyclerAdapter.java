@@ -47,7 +47,7 @@ public class BarberRecyclerAdapter extends RecyclerView.Adapter<Holder> {
   class Holder extends ViewHolder {
 
     private final TextView name;
-    private final TextView clickView;
+    private final View clickView;
 
     public Holder(@NonNull View itemView) {
       super(itemView);
